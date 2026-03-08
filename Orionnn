@@ -25,21 +25,12 @@ local OrionLib = {
 	SaveCfg = false
 }
 
--- 🔁 Локальные иконки через Unicode (замена feather icons)
-local Icons = {
-	diamond = "◆",
-	star = "★",
-	check = "✓",
-	x = "✖"
-}
+
 
 
 local Success, Response = true, nil
 
 
-local function GetIcon(IconName)
-	return Icons[IconName] or ""
-end
 
 local Orion = Instance.new("ScreenGui")
 Orion.Name = "Orion"
@@ -334,17 +325,13 @@ CreateElement("ScrollFrame", function(Color, Width)
 end)
 
 CreateElement("Image", function(ImageID)
-	local ImageNew = Create("ImageLabel", {
-		Image = ImageID,
-		BackgroundTransparency = 1
-	})
-
-	if GetIcon(ImageID) ~= nil then
-		ImageNew.Image = GetIcon(ImageID)
-	end	
-
-	return ImageNew
+    local ImageNew = Create("ImageLabel", {
+        Image = ImageID,
+        BackgroundTransparency = 1
+    })
+    return ImageNew
 end)
+
 
 CreateElement("ImageButton", function(ImageID)
 	local Image = Create("ImageButton", {
