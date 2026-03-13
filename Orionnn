@@ -18,9 +18,25 @@ local OrionLib = {
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
-		}
+		},
+		 Neon = {
+		            Main = Color3.fromRGB(10,10,10),
+		            Second = Color3.fromRGB(20,20,20),
+		            Stroke = Color3.fromRGB(0,255,200),
+		            Divider = Color3.fromRGB(0,255,200),
+		            Text = Color3.fromRGB(200,255,240),
+		            TextDark = Color3.fromRGB(120,180,170)
+		},
+		Ocean = {
+            Main = Color3.fromRGB(15,20,30),
+            Second = Color3.fromRGB(20,30,45),
+            Stroke = Color3.fromRGB(40,90,150),
+            Divider = Color3.fromRGB(40,90,150),
+            Text = Color3.fromRGB(235,245,255),
+            TextDark = Color3.fromRGB(150,170,200)
+        },
 	},
-	SelectedTheme = "Default",
+	SelectedTheme = "Neon",
 	Folder = nil,
 	SaveCfg = false
 }
